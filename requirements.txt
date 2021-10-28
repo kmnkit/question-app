@@ -1,0 +1,9 @@
+django>=3.2.1,<3.2.9
+djangorestframework
+djangorestframework-jwt
+psycopg2>=2.7.5,<2.8.9
+pytest
+pytest-django
+black
+flake8
+django-rest-authtoken
