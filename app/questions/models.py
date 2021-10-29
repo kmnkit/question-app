@@ -25,6 +25,9 @@ class Question(TimeStampedModel):
     def get_comment_count(self):
         return self.comments.count()
 
+    def get_nice_count(self):
+        return self.nice_count
+
 
 class Comment(TimeStampedModel):
     """질문에 대한 댓글 모델. 대댓글 작성 가능"""

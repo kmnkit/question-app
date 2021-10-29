@@ -7,3 +7,4 @@ pytest-django
 black
 flake8
 django-rest-authtoken
+django-debug-toolbar

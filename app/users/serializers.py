@@ -4,6 +4,7 @@ from rest_framework import serializers as sz
 from django.contrib.auth import authenticate, get_user_model
 from django.contrib.auth.models import update_last_login
 from rest_framework_jwt.settings import api_settings
+from questions.models import Nice
 
 
 class UserSerializer(sz.ModelSerializer):

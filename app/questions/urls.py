@@ -5,7 +5,7 @@ from .views import QuestionViewSet
 app_name = "questions"
 
 questions_router = DefaultRouter()
-questions_router.register("", QuestionViewSet, basename="questions")
+questions_router.register("questions", QuestionViewSet)
 
 
 urlpatterns = questions_router.urls

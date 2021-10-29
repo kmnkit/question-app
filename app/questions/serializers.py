@@ -5,7 +5,10 @@ from .models import Question, Comment, Nice
 class QuestionSerializer(sz.ModelSerializer):
     class Meta:
         model = Question
-        read_only_fields = ("nice_count",)
+        read_only_fields = (
+            "author",
+            "nice_count",
+        )
         exclude = ("updated_at",)
 
 
