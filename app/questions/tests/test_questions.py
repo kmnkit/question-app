@@ -9,7 +9,7 @@ pytestmark = pytest.mark.django_db
 
 User = get_user_model()
 
-user_list_url = reverse("users:user-list")
+user_list_url = reverse("users:list")
 question_list_url = reverse("questions:question-list")
 
 _user_payload = {"email": "admin@admin.com", "name": "admin123", "password": "admin123"}

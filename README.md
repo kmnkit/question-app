@@ -15,9 +15,11 @@
 # 명령어
 - 터미널에서 docker-compose build . (점까지 찍어야 함)로 빌드
 - docker-compose build
+- docker-compose up $\leftarrow$ 이 명령어로 migrate까지 실행
+- 이후 한 번 Ctrl+C로 빠져나옴.
 
 ## 단위테스트 방법
-- docker-compose run --rm app sh -c "pytest -v -s --durations=0
+- docker-compose run --rm app sh -c "pytest ."
 
 ## 슈퍼유저 작성
 - docker-compose run --rm app sh -c "python manage.py createsuperuser"

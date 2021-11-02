@@ -5,7 +5,7 @@ from rest_framework import status
 
 pytestmark = pytest.mark.django_db
 
-user_list_url = reverse("users:user-list")
+user_list_url = reverse("users:list")
 signup_url = reverse("users:signup")
 
 _user_payload = {"email": "admin@admin.com", "name": "admin123", "password": "admin123"}
